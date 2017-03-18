@@ -1,0 +1,67 @@
+== CHANGE LOG ==
+= 1.0.5 =
+* Updated  : 404.php updated
+* Updated  : footer.php updated
+* Updated  : style.css updated
+* Updated  : custom-editor.css updated
+* Updated  : custom-editor.css updated
+* Updated  : rainbownews_advertisement.php updated
+* Updated  : image-uploader.js updated
+* Removed  : template-contact.php updated
+
+= 1.0.4 =
+* Updated  : style.css updated
+* Added    : sidebar-left.php file added
+* Added    : changelog.txt file added
+* Updated  : updated at meta-box.php
+* Updated  : updated at rainbownews_advertisement.php
+* Updated  : updated at rainbownews_connect_with_us.php
+* Updated  : updated at rainbownews_featured_post.php
+* Updated  : updated at rainbownews_featured_post_layout1.php
+* Updated  : updated at rainbownews_featured_post_layout2.php
+* Updated  : updated at rainbownews_featured_post_layout3.php
+* Updated  : updated at rainbownews_slider.php
+* Updated  : updated at rainbownews_top_full_width.php
+* Updated  : updated at extras.php
+* Updated  : updated at category.php
+* Updated  : updated at template-home.php
+* Updated  : updated at template-contact.php
+* Updated  : updated at page.php
+* Updated  : updated at index.php
+* Updated  : updated at header.php
+* Updated  : updated at footer.php
+* Updated  : updated at archive.php
+* Updated  : updated at 404.php
+* Updated  : updated at rainbownews-function.php
+* Updated  : updated at function.php
+
+= 1.0.3 =
+* Updated  : style.css updated
+* Added    : language folder added
+* Updated  : updated at meta-box.php
+* Updated  : updated at rainbownews_advertisement.php
+* Updated  : updated at rainbownews_connect_with_us.php
+* Updated  : updated at rainbownews_featured_post.php
+* Updated  : updated at rainbownews_featured_post_layout1.php
+* Updated  : updated at rainbownews_featured_post_layout2.php
+* Updated  : updated at rainbownews_featured_post_layout3.php
+* Updated  : updated at rainbownews_post_tab.php
+* Updated  : updated at rainbownews_slider.php
+* Updated  : updated at rainbownews_top_full_width.php
+* Updated  : updated at extras.php
+* Updated  : updated at single.php
+* Updated  : updated at rainbownews-function.php
+* Updated  : updated at function.php
+
+= 1.0.2 =
+* Updated  : style.css updated
+* Removed  : removed comment from template-tags
+* Removed  : removed readme.Md
+* Added    : added custom-editor-style.css
+* Updated  : updated at function.php
+* Updated  : updated at screenshot.png
+
+= 1.0.1 =
+* Updated: style.css updated
+
+= 1.0.0 =
