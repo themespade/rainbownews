@@ -1,19 +1,18 @@
-
-if(jQuery('.nnc-main-navigation').length){
- var stickyNavTop = jQuery('.nnc-main-navigation').offset().top;
- var stickyNav = function(){
- var scrollTop = jQuery(window).scrollTop();
-  if (scrollTop > stickyNavTop) {
-         jQuery('.nnc-main-navigation').addClass('nnc-sticky');
-          } else {
-              jQuery('.nnc-main-navigation').removeClass('nnc-sticky');
-          }
-      };
-      stickyNav(); 
-      jQuery(window).scroll(function() {
-          stickyNav();
-      });
-  }
+if (jQuery('.nnc-main-navigation').length) {
+    var stickyNavTop = jQuery('.nnc-main-navigation').offset().top;
+    var stickyNav = function () {
+        var scrollTop = jQuery(window).scrollTop();
+        if (scrollTop > stickyNavTop) {
+            jQuery('.nnc-main-navigation').addClass('nnc-sticky');
+        } else {
+            jQuery('.nnc-main-navigation').removeClass('nnc-sticky');
+        }
+    };
+    stickyNav();
+    jQuery(window).scroll(function () {
+        stickyNav();
+    });
+}
 
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -29,18 +28,18 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function ($) {
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 1){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
             $('.nnc-scroll-top').addClass("show");
         }
-        else{
+        else {
             $('.nnc-scroll-top').removeClass("show");
         }
     });
-        $(".nnc-scroll-top").on("click", function() {
-         $("html, body").animate({ scrollTop: 0 }, 600);
+    $(".nnc-scroll-top").on("click", function () {
+        $("html, body").animate({scrollTop: 0}, 600);
         return false;
     });
 
@@ -57,10 +56,12 @@ jQuery(document).ready(function($){
     });
 
 
-    $('input,textarea').focus(function(){
-        $(this).data('placeholder',$(this).attr('placeholder'))
-            $(this).attr('placeholder','');});$('input,textarea').blur(function(){
-            $(this).attr('placeholder',$(this).data('placeholder'));
+    $('input,textarea').focus(function () {
+        $(this).data('placeholder', $(this).attr('placeholder'))
+        $(this).attr('placeholder', '');
+    });
+    $('input,textarea').blur(function () {
+        $(this).attr('placeholder', $(this).data('placeholder'));
     });
 
     // News Ticker
@@ -74,4 +75,9 @@ jQuery(document).ready(function($){
         pauseOnHover: 1
     });
 
+
+    //Submenu Dropdown Toggle
+    $(".nnc-resp-menu").click(function () {
+        $(".nnc-resp-navigation ul#primary-menu").slideToggle("fast");
+    });
 });

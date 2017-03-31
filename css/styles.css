@@ -167,10 +167,10 @@ footer.entry-footer {
 a.post-edit-link {
     background: #333;
     color: #fff;
-    padding: 8px 14px;
+    padding: 6px;
     display: inline-block;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11px;
 } 
 
 a.post-edit-link:hover {
@@ -1021,7 +1021,7 @@ button.search-submit i {
 	font-size: 20px;
 	font-weight: 400;
 	color: #fff;
-	display: inline-block;
+	display: block;
 	line-height: 24px;
 	margin-bottom: 10px;
 	font-family: 'Open Sans', sans-serif;
@@ -1416,7 +1416,7 @@ h2.widget-title > span {
 #primary {
 	width: 70%;
 	float:left;
-	margin-top: 30px; 
+	margin: 30px 0;
 }
 
 #secondary {
@@ -1574,7 +1574,7 @@ span.post-date {
 	font-size: 16px;
 	color: #444;
 	line-height: 24px;
-	display: inline-block;
+	display: block;
 	margin-bottom: 8px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -1753,10 +1753,10 @@ span.post-date {
 	width: 100%;
 }
 
-.nnc-category-small .nnc-category-single .nnc-category-dtl {
-	float: right;
-	width: 60%;
-}
+/*.nnc-category-small .nnc-category-single .nnc-category-dtl {*/
+	/*float: right;*/
+	/*width: 60%;*/
+/*}*/
 
 .nnc-category-layout-2 .nnc-category-small {
 	width: calc(49% - 5px);
@@ -1814,8 +1814,8 @@ span.post-date {
 a.nnc-readmore {
 	background: #333;
 	color: #fff;
-	font-size: 14px;
-	padding: 12px;
+	font-size: 12px;
+	padding: 10px;
 	display: inline-block;
 	margin-top: 10px;
 }
@@ -1844,14 +1844,6 @@ a.nnc-readmore:hover {
 
 .nnc-category-small-block .nnc-highlight-single .nnc-dtl .nnc-entry-title a {
 	font-size: 16px;
-}
-
-.nnc-category-small-block .nnc-highlight-single .nnc-dtl {
-	margin: 12px;
-}
-
-.nnc-category-highlight-block .nnc-dtl {
-	margin: 12px;
 }
 
 .nnc-pagination li {
@@ -2134,7 +2126,7 @@ a.nnc-readmore:hover {
 .nnc-social-sidebar-icons ul li a span {
 	color: #fff;
 	padding-left: 10px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 li.nnc-fb i {
@@ -2282,9 +2274,10 @@ body.error404 #primary {
 
 .error-404 p {
 	padding: 30px 0;
+	line-height: 24px;
 }
 
-.search-form {
+.error-404 .search-form {
 	margin-bottom: 60px;
 }
 
@@ -2296,10 +2289,23 @@ body.error404 #primary {
 ===================================*/
 body.search h1.page-title {
 	padding-bottom: 20px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.no-results .page-content p {
+	padding-bottom: 18px;
+}
+.no-results .search-form {
+	float: none;
+}
+
+.no-results .s-form {
+	max-width: 400px;
 }
 
 body.search h2.entry-title {
-	padding-bottom: 14px;
+	padding-bottom: 6px;
 }
 
 body.search .entry-summary {
@@ -2653,9 +2659,57 @@ address {
 }
 
 .post .above-entry-meta {
-	margin-bottom: 14px;
+	margin-bottom: 8px;
 }
 
+p.comment-notes {
+	font-size: 12px;
+	font-style: italic;
+	padding: 18px 0 0;
+}
+span.required {
+	color: indianred;
+}
+.comment-form p label {
+	padding: 14px 0;
+	display: block;
+}
+
+.comment-form p input {
+	width: 100%;
+	border-radius: 0;
+	border: 1px solid #eee;
+}
+
+p.form-submit input {
+	max-width: 200px;
+}
+
+body.no-sidebar-content-centered #primary {
+	width: 80%;
+	margin: 30px auto;
+	float: none;
+}
+
+body.no-sidebar-full-width #primary {
+	width: 100%;
+	margin: 30px 0;
+	float: none;
+}
+
+body.no-sidebar-full-width .nnc-category-small-block .nnc-hightlight-large {
+	width: calc(51.6% - 37px);
+}
+
+header.page-header {
+	padding-bottom: 20px;
+}
+.nnc-resp-menu {
+	display: none;
+}
+.nnc-resp-navigation {
+	display: none;
+}
 /*=====  End of Post All Css  ======*/
 
 

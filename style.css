@@ -625,7 +625,7 @@ a:active {
 
 .nnc-main-navigation ul.menu li.current-menu-item > a {
 	background: #D7263D;
-	color: #fff;
+	color: #fff!important;
 }
 
 .nnc-main-navigation ul.sub-menu .current-menu-item > a {

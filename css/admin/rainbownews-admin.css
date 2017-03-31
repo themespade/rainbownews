@@ -83,4 +83,9 @@ input[type=checkbox]:before {
 	display: block;
 }
 
+ul#sub-accordion-section-rainbownews_category_setting li:nth-child(2n+1) {
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 18px;
+}
+
 /*=====  End of Customizer CSS Stylesheet  ======*/
