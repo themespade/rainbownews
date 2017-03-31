@@ -14,3 +14,4 @@ if ( ! is_active_sidebar( 'rainbownews_left_sidebar' ) ) {
 <aside id="secondary" class="widget-area" role="complementary">
     <?php dynamic_sidebar('rainbownews_left_sidebar'); ?>
 </aside><!-- #secondary -->
+

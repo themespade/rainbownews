@@ -45,6 +45,7 @@ if ($query->have_posts()) :
 
     <div id="primary">
         <main id="main" class="site-main">
+
             <div class="nnc-category-highlight-block <?php echo $layout == 'layout-1' ? '' : 'nnc-category2-highlight-block'; ?>">
 
                 <?php while ($query->have_posts()) : $query->the_post();
@@ -67,8 +68,9 @@ if ($query->have_posts()) :
                             <?php } ?>
                             <div class="nnc-dtl">
 
-                                <div class="nnc-entry-title"><a href="<?php the_permalink(); ?>"
-                                                                title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                <div class="nnc-entry-title">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                        <?php the_title(); ?></a>
                                 </div>
                                 <div class="nnc-entry-meta">
                                            <span class="posted-on">
@@ -90,12 +92,13 @@ if ($query->have_posts()) :
                                             </a>
                                         <?php } ?>
                                             </span>
-                                        <span class="author"><i class="fa fa-user" aria-hidden="true"></i> <a
-                                                href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"
-                                                title="<?php the_author(); ?>"><?php echo esc_html(get_the_author()); ?></a></span>
-                                       <span class="comments-link"><i class="fa fa-comments" aria-hidden="true"></i> <a
-                                               href="<?php the_permalink(); ?>"
-                                               title="No Comments"><?php comments_popup_link( 'No Comment', '1', '%' ); ?></a></span>
+                                        <span class="author"><i class="fa fa-user" aria-hidden="true"></i>
+                                            <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>"
+                                                title="<?php the_author(); ?>"><?php echo esc_html(get_the_author()); ?>
+                                            </a></span>
+                                       <span class="comments-link"><i class="fa fa-comments" aria-hidden="true"></i>
+                                           <a href="<?php the_permalink(); ?>" title="No Comments">
+                                               <?php comments_popup_link( 'No Comment', '1', '%' ); ?></a></span>
                                 </div>
 
                                 <div class="nnc-category-list">
@@ -114,15 +117,20 @@ if ($query->have_posts()) :
 
                         </div>
                     </div>
-                    <?php if ($i == $rn_category_post_count) {
-                        echo '</div>';
-                    }
+
+                    <?php
+                        if ($i == 2) {
+                            if ($i == $rn_category_post_count) {
+                                echo '</div>';
+                            }
+                        }
                     $i++;
                 endwhile;
                 ?>
                 <?php wp_reset_query(); ?>
             </div>
 
+            <?php if( $query->max_num_pages > 1) : ?>
             <div class="nnc-pagination">
 
                 <?php $big = 999999999; // need an unlikely integer
@@ -136,6 +144,7 @@ if ($query->have_posts()) :
                 //echo paginate_links();
                 ?>
             </div>
+            <?php endif; ?>
 
         </main>
     </div>
