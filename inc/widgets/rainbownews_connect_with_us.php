@@ -26,7 +26,7 @@ class Rainbownews_connect_with_us extends WP_Widget
 
         $widget_ops = array(
             'classname'      =>  'rainbownews_connect_with_us',
-            'description'    =>  esc_html__( ' Connect With Us ', 'rainbownews' )
+            'description'    =>  esc_html__( ' Display your Social Media Links & Followers.', 'rainbownews' )
         );
 
         parent::__construct( 'rainbownews_connect_with_us', '&nbsp;' . __( 'NNC: Connect With Us', 'rainbownews' ), $widget_ops);

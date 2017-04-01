@@ -23,7 +23,7 @@ class Rainbownews_top_full_width extends WP_Widget
     {
         $widget_ops = array(
             'classname'      => 'rainbownews_top_full_width',
-            'description'    => __('Display latest posts or posts of specific category.', 'rainbownews')
+            'description'    => __('Best for Front Page: Full Width Area.', 'rainbownews')
         );
 
         parent::__construct( 'rainbownews_top_full_width', '&nbsp;' . __( ' NNC: Full Width Area ', 'rainbownews' ), $widget_ops );

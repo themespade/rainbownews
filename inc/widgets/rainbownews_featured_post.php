@@ -22,7 +22,7 @@ class Rainbownews_featured_post extends WP_Widget
     {
         $widget_ops = array(
             'classname'      =>  'rainbownews_featured_post',
-            'description'    =>  esc_html__( 'Add your  Featured Post', 'rainbownews' )
+            'description'    =>  esc_html__( 'Best for Front Page: Right Area.', 'rainbownews' )
         );
 
         parent::__construct( 'rainbownews_featured_post' , '&nbsp;' . __( ' NNC: Main Featured Post', 'rainbownews' ), $widget_ops);
