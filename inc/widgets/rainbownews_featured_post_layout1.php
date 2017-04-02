@@ -24,7 +24,7 @@ class Rainbownews_featured_post_layout1 extends WP_Widget
     {
         $widget_ops = array(
             'classname'      => 'rainbownews_featured_post_layout1',
-            'description'    => esc_html__('Display latest posts or posts of specific category.', 'rainbownews'));
+            'description'    => esc_html__('Best for (Front Page: Top Area & Front Page: Bottom Area).', 'rainbownews'));
 
         parent::__construct( 'rainbownews_featured_post_layout1', '&nbsp;' . __( ' NNC: News [ Layout 1 ] ', 'rainbownews' ), $widget_ops );
     }// end of construct.

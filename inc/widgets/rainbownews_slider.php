@@ -23,7 +23,7 @@ class Rainbownews_slider extends WP_Widget
     {
         $widget_ops = array(
             'classname'      => 'rainbownews_slider',
-            'description'    => __('Add your slider', 'rainbownews')
+            'description'    => __('Best for Front Page: Left Area.', 'rainbownews')
         );
 
         parent::__construct( 'rainbownews_slider', '&nbsp;' . __( 'NNC: Main Slider ', 'rainbownews' ), $widget_ops );

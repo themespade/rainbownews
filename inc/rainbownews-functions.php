@@ -82,7 +82,7 @@ function rainbownews_widgets_init()
     ));
 
     register_sidebar( array(
-        'name'              => esc_html__('Front Page: Top Content Area', 'rainbownews'),
+        'name'              => esc_html__('Front Page: Top Area', 'rainbownews'),
         'id'                => 'rainbownews_front_page_content_area',
         'description'       => esc_html__('Add widgets here.', 'rainbownews'),
         'before_widget'     => '<section id="%1$s" class="widget %2$s">',
@@ -92,7 +92,7 @@ function rainbownews_widgets_init()
     ));
 
     register_sidebar( array(
-        'name'              => esc_html__('Front Page: Middle Left Content Area', 'rainbownews'),
+        'name'              => esc_html__('Front Page: Middle Left Area', 'rainbownews'),
         'id'                => 'rainbownews_front_page_middle_left_content_area',
         'description'       => esc_html__('Add widgets here.', 'rainbownews'),
         'before_widget'     => '<section id="%1$s" class="widget %2$s">',
@@ -102,7 +102,7 @@ function rainbownews_widgets_init()
     ));
 
     register_sidebar( array(
-        'name'              => esc_html__('Front Page: Middle Right Content Area', 'rainbownews'),
+        'name'              => esc_html__('Front Page: Middle Right Area', 'rainbownews'),
         'id'                => 'rainbownews_front_page_middle_right_content_area',
         'description'       => esc_html__('Add widgets here.', 'rainbownews'),
         'before_widget'     => '<section id="%1$s" class="widget %2$s">',
@@ -112,18 +112,8 @@ function rainbownews_widgets_init()
     ));
 
     register_sidebar( array(
-        'name'              => esc_html__('Front Page: Bottom Content Area', 'rainbownews'),
+        'name'              => esc_html__('Front Page: Bottom Area', 'rainbownews'),
         'id'                => 'rainbownews_front_page_bottom_content_area',
-        'description'       => esc_html__('Add widgets here.', 'rainbownews'),
-        'before_widget'     => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'      => '</section>',
-        'before_title'      => '<h2 class="widget-title">',
-        'after_title'       => '</h2>',
-    ));
-
-    register_sidebar( array(
-        'name'              => esc_html__('Front Page: Gallery Area', 'rainbownews'),
-        'id'                => 'rainbownews_front_page_gallery_area',
         'description'       => esc_html__('Add widgets here.', 'rainbownews'),
         'before_widget'     => '<section id="%1$s" class="widget %2$s">',
         'after_widget'      => '</section>',
