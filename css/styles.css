@@ -2244,7 +2244,7 @@ figure.nnc-g-img {
  
 
 /*sticky*/
-.nnc-sticky {
+.nnc-nav.nnc-sticky {
     position: fixed;
     top: 0;
     z-index: 9999;
@@ -2700,15 +2700,23 @@ body.no-sidebar-full-width #primary {
 body.no-sidebar-full-width .nnc-category-small-block .nnc-hightlight-large {
 	width: calc(51.6% - 37px);
 }
-
 header.page-header {
 	padding-bottom: 20px;
 }
+
+.nnc-nav {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+
 .nnc-resp-menu {
 	display: none;
 }
 .nnc-resp-navigation {
 	display: none;
+	max-height: 400px;
+	overflow: auto;
 }
 /*=====  End of Post All Css  ======*/
 

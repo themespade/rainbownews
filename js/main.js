@@ -1,11 +1,11 @@
-if (jQuery('.nnc-main-navigation').length) {
-    var stickyNavTop = jQuery('.nnc-main-navigation').offset().top;
+if (jQuery('.nnc-nav').length) {
+    var stickyNavTop = jQuery('.nnc-nav').offset().top;
     var stickyNav = function () {
         var scrollTop = jQuery(window).scrollTop();
         if (scrollTop > stickyNavTop) {
-            jQuery('.nnc-main-navigation').addClass('nnc-sticky');
+            jQuery('.nnc-nav').addClass('nnc-sticky');
         } else {
-            jQuery('.nnc-main-navigation').removeClass('nnc-sticky');
+            jQuery('.nnc-nav').removeClass('nnc-sticky');
         }
     };
     stickyNav();
@@ -75,9 +75,8 @@ jQuery(document).ready(function ($) {
         pauseOnHover: 1
     });
 
-
     //Submenu Dropdown Toggle
     $(".nnc-resp-menu").click(function () {
-        $(".nnc-resp-navigation ul#primary-menu").slideToggle("fast");
+        $(".nnc-resp-navigation").slideToggle("fast");
     });
 });
