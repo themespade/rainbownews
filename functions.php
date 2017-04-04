@@ -159,7 +159,6 @@ function rainbownews_admin_scripts( $hook ) {
 	if ( $hook == 'widgets.php' ) {
 		//For color
 		wp_enqueue_style( 'wp-color-picker' );
-		wp_enqueue_script( 'wp-color-picker' );
 
 		wp_enqueue_style( 'rainbownews-admin-css', get_template_directory_uri() . '/css/admin/rainbownews-admin.css', false, '1.0.0' );
 
