@@ -1,4 +1,6 @@
 == CHANGE LOG ==
+
+customizer.php, style.css
 = 1.0.5 =
 * Updated  : 404.php updated
 * Updated  : footer.php updated
