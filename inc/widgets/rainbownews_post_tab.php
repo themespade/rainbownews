@@ -294,43 +294,6 @@ class Rainbownews_post_tab extends WP_Widget
                     <div id="Comments" class="tabcontent">
                         <ul>
 
-                            <?php
-                            foreach ( $rcomments as $comment ) {
-                                $comment_post_ID = $comment->comment_post_ID;
-                                $comment_author = $comment->comment_author;
-                                $comment_author_url = $comment->comment_author_url;
-                                $comment_date = mysql2date('U', $comment->comment_date, false);
-                                $comment_content = $comment->comment_content;
-                                $comment_array = explode(' ', $comment_content);
-
-                                if (sizeof($comment_array) > 10) {
-                                    $new_comment_content = '';
-
-                                    for ($i = 0;
-                                         $i < 10;
-                                         $i++) {
-                                        $new_comment_content .= $comment_array[$i] . ' ';
-                                    }
-
-                                    $new_comment_content = trim($new_comment_content) . '...';
-                                } else {
-                                    $new_comment_content = $comment_content;
-                                }
-                                ?>
-
-                                <li>
-                                    <?php
-                                    echo ( ( $comment_author_url != '' ) ? '<a href="' . $comment_author_url . '" title="' . $comment_author_url . '" target="_blank">' : '' ) . $comment_author . ( ( $comment_author_url != '' ) ? '</a>' : '') .
-                                        ' <span class="color_2">' . __( 'on', 'rainbownews' ) . '</span> <a href="' . get_permalink( $comment_post_ID ) . '#comments" rel="bookmark">' . get_the_title() . '</a>';
-
-                                    rainbownews_comments_posted_on_cb( $comment->comment_ID );
-                                    ?>
-
-                                    <p><?php echo $new_comment_content; ?> </p>
-                                </li>
-                                <?php
-                            }
-                            ?>
                         </ul>
                     </div>
 
