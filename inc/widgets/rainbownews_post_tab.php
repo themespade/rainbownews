@@ -299,7 +299,9 @@ class Rainbownews_post_tab extends WP_Widget
 
                     --><?php
 /*                }*/
-
+        ?>
+        <div id="Comments" class="tabcontent">
+                <?php
         $comments = get_comments( apply_filters( 'widget_comments_args', array(
             'number'      => $number,
             'status'      => 'approve',
@@ -325,6 +327,9 @@ class Rainbownews_post_tab extends WP_Widget
         $output .= '</ul>';
 
         echo $output;
+        ?>
+        <div id="Comments" class="tabcontent">
+        <?php
 
         }
             ?>
