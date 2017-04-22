@@ -32,6 +32,8 @@ function rainbownews_body_classes( $classes )
         $classes[] = 'box';
     }
 
+    $classes[] = 'loading';
+
     return $classes;
 }
 

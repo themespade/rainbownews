@@ -80,3 +80,11 @@ jQuery(document).ready(function ($) {
         $(".nnc-resp-navigation").slideToggle("fast");
     });
 });
+
+/* Create HTML5 element for IE */
+document.createElement("section");
+
+jQuery(window).load(function(){
+	jQuery('.pageloader').fadeOut('slow');
+	jQuery('body').removeClass('loading');
+});
