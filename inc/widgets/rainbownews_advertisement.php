@@ -27,7 +27,7 @@ class Rainbownews_advertisement extends WP_Widget
     {
         $widget_ops = array(
             'classname'      =>  'rainbownews_advertisement',
-            'description'    =>  esc_html__( 'Best for Top Advertisement.', 'rainbownews' )
+            'description'    =>  esc_html__( ' Advertisement Widget.', 'rainbownews' )
         );
 
         parent::__construct( 'rainbownews_advertisement', '&nbsp;' . __( 'NNC: Advertisement', 'rainbownews' ), $widget_ops );
@@ -46,8 +46,6 @@ class Rainbownews_advertisement extends WP_Widget
         $style                         =  esc_attr( $instance['style'] );
 
     ?>
-
-        <label><?php _e( 'Add your Advertisement 728x90 Images Here', 'rainbownews' ); ?></label>
         <p>
             <label for="<?php echo $this->get_field_id( $image_link ); ?>"> <?php _e( 'Advertisement Image Link ', 'rainbownews' ); ?></label>
 

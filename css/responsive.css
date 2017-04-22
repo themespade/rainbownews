@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+    body.box {
+        margin: 0 auto!important;
+    }
 }
 
 @media (max-width: 991px) {

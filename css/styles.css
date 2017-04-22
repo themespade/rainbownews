@@ -1519,11 +1519,6 @@ span.post-date {
 	background: #D7263D;
 }
 
-/*New Widgets*/
-.nnc-tabs ul li {
-	display: inline-block;
-}
-
 
 
 /*=====  End of Default Widgets  ======*/
@@ -2370,16 +2365,30 @@ header#masthead {
 
 /*============================
 =            Tabs            =
-============================*/ 
+============================*/
+span.comment-author-link {
+	color: #D7263D;
+}
 
 .nnc-tabs ul li {
 	display: inline-block;
 	padding: 8px 10px;
 	cursor: pointer;
-	text-align: center; 
-    border-right: 1px solid #eee;
-    line-height: normal;
-} 
+	text-align: center;
+	border-right: 1px solid #eee;
+	line-height: normal;
+}
+.nnc-tabs .tabcontent ul#recentcomments li a {
+	font-style: italic;
+}
+.nnc-tabs .tabcontent ul#recentcomments li {
+	display: block;
+	padding: 0;
+	cursor: pointer;
+	text-align: left;
+	border-right: none;
+	line-height: 24px;
+}
 
 .nnc-tabs ul li:last-child {
 	border-right: 0;
@@ -2722,3 +2731,17 @@ header.page-header {
 
 
 /*=====  End of Theme Unit test  ======*/
+
+body.box {
+	max-width: 1050px;
+	box-shadow: 0 0 3px 0 #ccc;
+	margin: 30px auto;
+}
+
+.site-content {
+	background: #f9f9f9;
+}
+
+body.box .nnc-nav.nnc-sticky {
+	max-width: 1050px;
+}

@@ -328,7 +328,7 @@ class Rainbownews_post_tab extends WP_Widget
 
         echo $output;
         ?>
-        <div id="Comments" class="tabcontent">
+        </div>
         <?php
 
         }
