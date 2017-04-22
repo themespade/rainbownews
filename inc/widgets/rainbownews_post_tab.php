@@ -283,23 +283,50 @@ class Rainbownews_post_tab extends WP_Widget
             }
 
             if ($recent) {
-                $rcomments = get_comments(array(
+                /*$rcomments = get_comments(array(
                     'number'    => $number,
                     'post_type' => 'post',
                     'status'    => 'approve'
                 ));
 
                 if ($rcomments) {
-                    ?>
+                    */?><!--
                     <div id="Comments" class="tabcontent">
                         <ul>
 
                         </ul>
                     </div>
 
-                    <?php
-                }
+                    --><?php
+/*                }*/
+
+        $comments = get_comments( apply_filters( 'widget_comments_args', array(
+            'number'      => $number,
+            'status'      => 'approve',
+            'post_status' => 'publish'
+        ) ) );
+        $output = '';
+        $output .= '<ul id="recentcomments">';
+        if ( is_array( $comments ) && $comments ) {
+            // Prime cache for associated posts. (Prime post term cache if we need it for permalinks.)
+            $post_ids = array_unique( wp_list_pluck( $comments, 'comment_post_ID' ) );
+            _prime_post_caches( $post_ids, strpos( get_option( 'permalink_structure' ), '%category%' ), false );
+
+            foreach ( (array) $comments as $comment ) {
+                $output .= '<li class="recentcomments">';
+                /* translators: comments widget: 1: comment author, 2: post link */
+                $output .= sprintf( _x( '%1$s on %2$s', 'widgets' ),
+                    '<span class="comment-author-link">' . get_comment_author_link( $comment ) . '</span>',
+                    '<a href="' . esc_url( get_comment_link( $comment ) ) . '">' . get_the_title( $comment->comment_post_ID ) . '</a>'
+                );
+                $output .= '</li>';
             }
+        }
+        $output .= '</ul>';
+
+        echo $output;
+
+        }
             ?>
 
 
