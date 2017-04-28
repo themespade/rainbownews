@@ -125,14 +125,20 @@ function rainbownews_scripts() {
 	//Register style
 	wp_enqueue_style( 'rainbownews-styles', get_template_directory_uri() . '/css/styles.css', false, '1.0.0' );
 
-	//Register swiper
-	wp_enqueue_style( 'swiper', get_template_directory_uri() . '/css/swiper.css', false, '1.0.0' );
+    //Register swiper
+    wp_enqueue_style( 'swiper', get_template_directory_uri() . '/css/swiper.css', false, '1.0.0' );
+
+    //Register animate
+    wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', false, '3.5.1' );
 
     //google-fonts
 	wp_enqueue_script( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans', '1.0.0', true );
 
-	//Register swiper
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.js', array( 'jquery' ), '3.3.1', true );
+    //Register swiper
+    wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.js', array( 'jquery' ), '3.3.1', true );
+
+    //Register wow
+    wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow.js', array( 'jquery' ), '1.1.2', true );
 
 	wp_enqueue_script( 'newsticker', get_template_directory_uri() . '/js/newsTicker.js', array( 'jquery' ), '1.0.11', true );
 

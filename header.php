@@ -22,15 +22,15 @@
 </head>
 
 <body <?php body_class(); ?> >
-<div class="pageloader">
-	<div class="spinner">
-		<div class="rect1"></div>
-		<div class="rect2"></div>
-		<div class="rect3"></div>
-		<div class="rect4"></div>
-		<div class="rect5"></div>
-	</div>
-</div>
+<!--<div class="pageloader">-->
+<!--	<div class="spinner">-->
+<!--		<div class="rect1"></div>-->
+<!--		<div class="rect2"></div>-->
+<!--		<div class="rect3"></div>-->
+<!--		<div class="rect4"></div>-->
+<!--		<div class="rect5"></div>-->
+<!--	</div>-->
+<!--</div>-->
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'rainbownews'); ?></a>
 
