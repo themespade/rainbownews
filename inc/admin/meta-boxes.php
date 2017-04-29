@@ -94,9 +94,18 @@ function rainbownews_save_custom_meta( $post_id )
 {
     global $rainbownews_page_specific_layout;
 
-    // Verify the nonce before proceeding.
-    if ( !isset( $_POST['rainbownews_custom_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['rainbownews_custom_meta_box_nonce'], basename( __FILE__ ) ) )
+    // Add nonce for security and authentication.
+    $nonce_name   = esc_attr( isset( $_POST['rainbownews_custom_meta_box_nonce'] ) ? $_POST['rainbownews_custom_meta_box_nonce'] : '' );
+
+    // Check if nonce is set.
+    if ( ! isset( $nonce_name ) ) {
         return;
+    }
+
+    // Check if nonce is valid.
+    if ( ! wp_verify_nonce( $nonce_name,  basename( __FILE__ ) ) ) {
+        return;
+    }
 
     // Stop WP from clearing custom fields on autosave
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
