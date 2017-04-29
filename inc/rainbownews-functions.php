@@ -231,7 +231,7 @@ function rainbownews_latest_news()
     if ( $p->have_posts() ) {  ?>
 
         <div class="nnc-trending-single">
-            <div class="nnc-trend-title"><?php echo $title; ?></div>
+            <div class="nnc-trend-title"><?php echo esc_html( $title ); ?></div>
 
             <ul class="newsticker">
                 <?php  while ( $p->have_posts() ) {
@@ -375,7 +375,7 @@ if ( ! function_exists( 'rainbownews_breadcrumbs' ) ) :
 
                 }
                 elseif ( is_search() ) {
-                    echo $before . 'Search results for "' . get_search_query() . '"' . $after;
+                    echo $before . esc_html__('Search results for "', 'rainbownews') . get_search_query() . '"' . $after;
 
                 }
                 elseif ( is_day() ) {
@@ -400,7 +400,7 @@ if ( ! function_exists( 'rainbownews_breadcrumbs' ) ) :
                     if ( get_post_type() != 'post' ) {
                         $post_type = get_post_type_object( get_post_type() );
                         $slug = $post_type->rewrite;
-                        echo '<a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a>';
+                        echo '<a href="' . esc_url( home_url() . '/' . $slug['slug'] ) . '/">' . $post_type->labels->singular_name . '</a>';
                         if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
                     }
                     else {

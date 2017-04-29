@@ -30,6 +30,27 @@ function rainbownews_customize_register( $wp_customize )
     $wp_customize->get_section( 'static_front_page' )->panel  = 'rainbownews_general_options';
     $wp_customize->get_section( 'colors' )->panel  = 'rainbownews_general_options';
 
+    //Activate Loader
+    $wp_customize->add_section( 'rainbownews_activate_loader_section', array(
+        'priority'             =>  2,
+        'title'                =>  esc_html__('Activate Loader Settings', 'rainbownews'),
+        'panel'                =>  'rainbownews_general_options'
+    ) );
+
+    $wp_customize->add_setting( 'rainbownews_activate_loader', array(
+        'default' 			   =>  '',
+        'capability' 		   =>  'edit_theme_options',
+        'sanitize_callback'    =>  'rainbownews_checkbox_sanitize'
+    ) );
+
+    $wp_customize->add_control( 'rainbownews_activate_loader', array(
+        'type' 				   =>  'checkbox',
+        'label' 			   =>  esc_html__( 'Activate Loader', 'rainbownews' ),
+        'settings' 			   =>  'rainbownews_activate_loader',
+        'section' 			   =>  'rainbownews_activate_loader_section'
+    ) );
+
+
     // site layout setting
     $wp_customize->add_section( 'rainbownews_site_layout_section', array(
         'priority'             =>  5,
@@ -230,7 +251,7 @@ function rainbownews_customize_register( $wp_customize )
 
     $wp_customize->add_control( 'rainbownews_activate_search', array(
         'type' 				   =>  'checkbox',
-        'label' 			   =>  esc_html__( 'Activate Breadcrumb', 'rainbownews' ),
+        'label' 			   =>  esc_html__( 'Activate Search', 'rainbownews' ),
         'settings' 			   =>  'rainbownews_activate_search',
         'section' 			   =>  'rainbownews_activate_search_section'
     ) );

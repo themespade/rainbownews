@@ -103,7 +103,7 @@ class Rainbownews_post_tab extends WP_Widget
         $recent  = isset( $instance['recent'] ) ? $instance['recent'] : true;
         $number  = isset( $instance['number'] ) ? (int)$instance['number'] : '';
 
-        if (empty($instance['number']) || !$number = absint($instance['number'])) {
+        if ( empty($instance['number']) ) {
             $number = 3;
         } elseif ($number < 1) {
             $number = 1;
@@ -283,22 +283,7 @@ class Rainbownews_post_tab extends WP_Widget
             }
 
             if ($recent) {
-                /*$rcomments = get_comments(array(
-                    'number'    => $number,
-                    'post_type' => 'post',
-                    'status'    => 'approve'
-                ));
 
-                if ($rcomments) {
-                    */?><!--
-                    <div id="Comments" class="tabcontent">
-                        <ul>
-
-                        </ul>
-                    </div>
-
-                    --><?php
-/*                }*/
         ?>
         <div id="Comments" class="tabcontent">
                 <?php
