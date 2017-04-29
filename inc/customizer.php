@@ -33,12 +33,12 @@ function rainbownews_customize_register( $wp_customize )
     //Activate Loader
     $wp_customize->add_section( 'rainbownews_activate_loader_section', array(
         'priority'             =>  2,
-        'title'                =>  esc_html__('Activate Loader Settings', 'rainbownews'),
+        'title'                =>  esc_html__('Activate Loader', 'rainbownews'),
         'panel'                =>  'rainbownews_general_options'
     ) );
 
     $wp_customize->add_setting( 'rainbownews_activate_loader', array(
-        'default' 			   =>  '',
+        'default' 			   =>  1,
         'capability' 		   =>  'edit_theme_options',
         'sanitize_callback'    =>  'rainbownews_checkbox_sanitize'
     ) );
@@ -48,6 +48,26 @@ function rainbownews_customize_register( $wp_customize )
         'label' 			   =>  esc_html__( 'Activate Loader', 'rainbownews' ),
         'settings' 			   =>  'rainbownews_activate_loader',
         'section' 			   =>  'rainbownews_activate_loader_section'
+    ) );
+
+    //Activate Animation
+    $wp_customize->add_section( 'rainbownews_activate_animation_section', array(
+        'priority'             =>  2,
+        'title'                =>  esc_html__('Activate Animation', 'rainbownews'),
+        'panel'                =>  'rainbownews_general_options'
+    ) );
+
+    $wp_customize->add_setting( 'rainbownews_activate_animation', array(
+        'default' 			   =>  1,
+        'capability' 		   =>  'edit_theme_options',
+        'sanitize_callback'    =>  'rainbownews_checkbox_sanitize'
+    ) );
+
+    $wp_customize->add_control( 'rainbownews_activate_animation', array(
+        'type' 				   =>  'checkbox',
+        'label' 			   =>  esc_html__( 'Activate Animation', 'rainbownews' ),
+        'settings' 			   =>  'rainbownews_activate_animation',
+        'section' 			   =>  'rainbownews_activate_animation_section'
     ) );
 
 
@@ -251,7 +271,7 @@ function rainbownews_customize_register( $wp_customize )
 
     $wp_customize->add_control( 'rainbownews_activate_search', array(
         'type' 				   =>  'checkbox',
-        'label' 			   =>  esc_html__( 'Activate Search', 'rainbownews' ),
+        'label' 			   =>  esc_html__( 'Activate Search Box', 'rainbownews' ),
         'settings' 			   =>  'rainbownews_activate_search',
         'section' 			   =>  'rainbownews_activate_search_section'
     ) );

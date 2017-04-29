@@ -73,5 +73,16 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<?php if( get_theme_mod('rainbownews_activate_animation') == '1'): ?>
+<script>
+    /* Animation */
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 10
+    });
+    wow.init();
+</script>
+<?php endif; ?>
+
 </body>
 </html>

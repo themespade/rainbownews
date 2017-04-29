@@ -97,15 +97,11 @@
             </main>
         </div>
 
-
-        <aside id="secondary" class="widget-area" role="complementary">
-            <?php
-            if (is_active_sidebar('rainbownews_front_page_sidebar')) {
-
-                dynamic_sidebar('rainbownews_front_page_sidebar');
-
-            } ?>
-        </aside>
+        <?php if ( is_active_sidebar( 'rainbownews_front_page_sidebar' ) ) { ?>
+            <aside id="secondary" class="widget-area" role="complementary">
+                <?php dynamic_sidebar('rainbownews_front_page_sidebar'); ?>
+            </aside>
+        <?php } ?>
 
     </div>
 <?php endif;

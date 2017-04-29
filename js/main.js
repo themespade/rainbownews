@@ -84,7 +84,7 @@ jQuery(document).ready(function ($) {
 /* Create HTML5 element for IE */
 document.createElement("section");
 
-jQuery(window).load(function(){
+jQuery(window).load(function() {
 	jQuery('.pageloader').fadeOut('slow');
 	jQuery('body').removeClass('loading');
 });

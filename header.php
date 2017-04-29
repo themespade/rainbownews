@@ -8,7 +8,6 @@
  *
  * @package RainbowNews
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -22,6 +21,9 @@
 </head>
 
 <body <?php body_class(); ?> >
+
+<?php
+if( get_theme_mod( 'rainbownews_activate_loader' ) == '1' ) : ?>
 <div class="pageloader">
 	<div class="spinner">
 		<div class="rect1"></div>
@@ -31,6 +33,8 @@
 		<div class="rect5"></div>
 	</div>
 </div>
+<?php endif; ?>
+
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'rainbownews'); ?></a>
 
