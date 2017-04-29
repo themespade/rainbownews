@@ -88,10 +88,3 @@ jQuery(window).load(function() {
 	jQuery('.pageloader').fadeOut('slow');
 	jQuery('body').removeClass('loading');
 });
-
-/* Animation */
-wow = new WOW({
-	animateClass: 'animated',
-	offset: 10
-});
-wow.init();
