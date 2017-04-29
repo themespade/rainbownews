@@ -363,10 +363,10 @@ if ( ! function_exists( 'rainbownews_breadcrumbs' ) ) :
             $homeLink = esc_url( home_url() );
 
             if ( is_home() || is_front_page() ) {
-                if ($showOnHome == 1) echo '<div id="rainbownews--breadcrumbs"><div class="nnc-top-breadcrumbs"><a href="' . $homeLink . '" class="breadcrumb_home_text">' . $home . '</a></div></div>';
+                if ($showOnHome == 1) echo '<div id="rainbownews--breadcrumbs"><div class="nnc-top-breadcrumbs"><a href="' . $homeLink . '" class="breadcrumb_home_text">' . balanceTags($home) . '</a></div></div>';
             }
             else {
-                echo '<div id="rainbownews--breadcrumbs"><div class="nnc-top-breadcrumbs"><a href="' . $homeLink . '" class="breadcrumb_home_text">' . $home . '</a>' . $delimiter . ' ';
+                echo '<div id="rainbownews--breadcrumbs"><div class="nnc-top-breadcrumbs"><a href="' . $homeLink . '" class="breadcrumb_home_text">' . balanceTags($home) . '</a>' . $delimiter . ' ';
 
                 if ( is_category() ) {
                     $thisCat = get_category( get_query_var('cat'), false );
@@ -380,19 +380,19 @@ if ( ! function_exists( 'rainbownews_breadcrumbs' ) ) :
                 }
                 elseif ( is_day() ) {
 
-                    echo '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a> ' . $delimiter . ' ';
-                    echo '<a href="' . get_month_link( get_the_time( 'Y' ),  get_the_time( 'm' )) . '">' . get_the_time( 'F' ) . '</a> ' . $delimiter . ' ';
-                    echo $before . get_the_time( 'd' ) . $after;
+                    echo '<a href="' . get_year_link( esc_attr( get_the_time( 'Y' ) ) ) . '">' . esc_attr( esc_attr( get_the_time( 'Y' ) ) ) . '</a> ' . $delimiter . ' ';
+                    echo '<a href="' . get_month_link( esc_attr( get_the_time( 'Y' ) ), esc_attr( get_the_time( 'm' ) ) ) . '">' . esc_attr( get_the_time( 'F' ) ) . '</a> ' . $delimiter . ' ';
+                    echo $before . esc_attr( get_the_time( 'd' ) ) . $after;
 
                 }
                 elseif ( is_month() ) {
 
-                    echo '<a href="' . get_year_link( get_the_time( 'Y' ) ) . '">' . get_the_time( 'Y' ) . '</a> ' . $delimiter . ' ';
-                    echo $before . get_the_time( 'F' ) . $after;
+                    echo '<a href="' . get_year_link( esc_attr( get_the_time( 'Y' ) ) ) . '">' . esc_attr( get_the_time( 'Y' ) ). '</a> ' . $delimiter . ' ';
+                    echo $before . esc_attr( get_the_time( 'F' ) ) . $after;
 
                 }
                 elseif ( is_year() ) {
-                    echo $before . get_the_time( 'Y' ) . $after;
+                    echo $before . esc_attr( get_the_time( 'Y' ) ) . $after;
 
                 }
                 elseif ( is_single() && !is_attachment() ) {

@@ -202,7 +202,7 @@ function rainbownews_customize_register( $wp_customize )
     ) );
 
     $wp_customize->add_setting( 'rainbownews_news_ticker_title', array(
-        'default'              =>  'Trending News',
+        'default'              =>  '',
         'capability'           =>  'edit_theme_options',
         'sanitize_callback'	   =>  'rainbownews_sanitize_text'
     ) );
