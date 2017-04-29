@@ -161,7 +161,7 @@ class Rainbownews_featured_post_layout1 extends WP_Widget
 
                     } ?>
 
-                    <div class="nnc-category-single <?php echo has_post_thumbnail() ? '' : 'nnc-no-image'; ?>">
+                    <div class="nnc-category-single <?php echo has_post_thumbnail() ? '' : 'nnc-no-image'; ?> wow fadeInUp animated" data-wow-delay="0.5s">
 
                         <?php if ( $i == 1 || $i == 2 ) { ?>
 

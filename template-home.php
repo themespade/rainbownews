@@ -36,7 +36,7 @@
     <!-- banner-end -->
 
     <!-- latest-start -->
-    <div class="nnc-top-latest nnc-clearblock">
+    <div class="nnc-top-latest nnc-clearblock wow fadeInUp animated" data-wow-delay="0.5s">
 
         <?php
         if ( is_active_sidebar( 'rainbownews_front_page_latest_post_area' ) ) {
