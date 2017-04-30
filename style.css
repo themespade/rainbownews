@@ -975,3 +975,11 @@ span.rss-date {
 .nnc-header-image {
 	line-height: 0;
 }
+
+.nnc-footer-bottom p {
+	float: left;
+}
+
+.nnc-footer-bottom p:last-of-type {
+	float: right;
+}

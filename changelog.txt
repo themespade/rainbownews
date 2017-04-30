@@ -1,8 +1,8 @@
 == CHANGE LOG ==
 
 = 1.0.6 =
-* Feature - Animation Added
-* Feature - PreLoader Added
+* New Feature - Animate and wow (for animation) Added
+* New Feature - PreLoader Added
 * Fix - Header Image
 * Fix - Header Logo Option
 

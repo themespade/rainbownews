@@ -1,6 +1,6 @@
 == Rainbownews  ==
 
-Rainbownews is modern style free News/Magazine Portal responsive WordPress theme. Rainbownews can be used for business, photography, any kind of sites. It is SEO friendly with featured image supports and custom colors. This theme is fully widgetized, so it is easier to operate.Theme customizer can be used to change color, upload logo and other theme settings. You can get quick SUPPORT through support page https://99colorthemes.com/support/ and view live DEMO at http://demo.99colorthemes.com/rainbownews/
+Rainbownews is modern style free News/Magazine Portal responsive WordPress theme. Rainbownews can be used for business, photography, any kind of sites. It is SEO friendly with featured image supports and custom colors. This theme is fully widgetized, so it is easier to operate.Theme customizer can be used to change color, upload logo and other theme settings. You can get quick SUPPORT through support page http://themespade.com/support/ and view live DEMO at http://themespade.com/theme/rainbow-news/
 
 === Credits ===
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
@@ -52,10 +52,7 @@ External resources linked to the theme.
 == THEME USAGE ==
 
 = Theme Instruction =
-Get theme instruction at http://99colorthemes.com/theme-instruction/rainbownews/
-
-= Free Support =
-Get free support at http://99colorthemes.com/support-forum/rainbownews/
+Get theme instruction at http://docs.themespade.com/rainbownews/
 
 = Theme Features Usage =
 All available options can be used from Appearance->Customize
@@ -63,9 +60,5 @@ All available options can be used from Appearance->Customize
 /**********************************************************/
 
 == TRANSLATIONS ==
-If you've translated this theme into your language, feel free to send the translation over to 99colorthemes@gmail.com
+If you've translated this theme into your language, feel free to send the translation over to themespade@gmail.com
 and we will include it within the theme from next version update.
-
-/**********************************************************/
-
-* Submitted to WordPress.org for review
