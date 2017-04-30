@@ -35,8 +35,19 @@ if( get_theme_mod( 'rainbownews_activate_loader' ) == '1' ) : ?>
 </div>
 <?php endif; ?>
 
+
+
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'rainbownews'); ?></a>
+    <?php
+    $header_image = get_header_image();
+    if( ! empty( $header_image ) ) {
+        ?>
+       <img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+        <?php
+    }
+    ?>
+
 
     <?php if (get_theme_mod('rainbownews_top_bar_activate') == '1') : ?>
 
@@ -67,7 +78,10 @@ if( get_theme_mod( 'rainbownews_activate_loader' ) == '1' ) : ?>
 
     <?php endif; ?>
 </div>
+
 <header id="masthead" class="site-header" role="banner">
+
+
     <div class="nnc-logo-bar">
         <div class="nnc-container">
             <div class="site-branding">
@@ -115,6 +129,7 @@ if( get_theme_mod( 'rainbownews_activate_loader' ) == '1' ) : ?>
         </div>
     </div>
 
+
     <div class="nnc-nav">
         <div class="nnc-container">
             <div class="nnc-main-navigation">
@@ -132,15 +147,9 @@ if( get_theme_mod( 'rainbownews_activate_loader' ) == '1' ) : ?>
     </div>
 </header><!-- #masthead -->
 
-
-<!--    <div class="nnc-resp-navigation">-->
-<!--        <div class="nnc-container">-->
-<!--            --><?php //wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-<!--        </div>-->
-<!--    </div>-->
-
 <div id="content" class="site-content">
     <div class="nnc-container">
+
         <!-- trending-start -->
         <div class="nnc-trending-news nnc-clearblock">
 
