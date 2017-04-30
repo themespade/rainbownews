@@ -35,15 +35,16 @@ if( get_theme_mod( 'rainbownews_activate_loader' ) == '1' ) : ?>
 </div>
 <?php endif; ?>
 
-
-
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'rainbownews'); ?></a>
     <?php
     $header_image = get_header_image();
     if( ! empty( $header_image ) ) {
         ?>
-       <img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+		<div class="nnc-header-image">
+			<img src="<?php echo esc_url( $header_image ); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"
+				 alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+		</div>
         <?php
     }
     ?>
