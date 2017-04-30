@@ -19,7 +19,6 @@ External resources linked to the theme.
 
  Apache License, version 2.0
 
-Resources packed within the theme.
 * Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://fontawesome.io/license/.
 
@@ -29,10 +28,11 @@ Resources packed within the theme.
 * JQuery Advanced News Ticker by risq http://risq.github.io/jquery-advanced-news-ticker/
   Licensed under MIT, 1.0.11 copyright 2016.
 
-* jQuery JavaScript Library http://jquery.com/
-  Licensed under MIT, v2.2.3 copyright 2016.
+* Animate Version - 3.5.1 by Daniel Eden Copyright (c) 2016, https://github.com/daneden/animate.css
+  Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-
+* Wow Version - 1.1.2 by Matthieu Aussaguel, https://github.com/matthieua/WOW
+  License compatible with the GNU GPL license v3.
 
 /**********************************************************/
 *Images
